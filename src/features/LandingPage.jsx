@@ -29,21 +29,15 @@ class LandingPage extends Component {
                         <div className="container">
                             <div className="icon">
                                 <FontAwesomeIcon className="icon-i" icon={faBolt} />
-                                <p>
-                                    Product so awesome. Makes you awesome - go buy!
-                                </p>
+                                <p>Product so awesome. Makes you awesome - go buy!</p>
                             </div>
                             <div className="icon">
                                 <FontAwesomeIcon className="icon-i" icon={faUniversity} />
-                                <p>
-                                    Product so great. Makes you even greater - go buy now. Super cheap deal! go buy now. Super cheap deal!
-                                </p>
+                                <p>Product so great. Makes you even greater - go buy now. Super cheap deal! go buy now. Super cheap deal!</p>
                             </div>
                             <div className="icon">
                                 <FontAwesomeIcon className="icon-i" icon={faHeart} />
-                                <p>
-                                    Feel lonely? Go buy product and have a friend!
-                                </p>
+                                <p>Feel lonely? Go buy product and have a friend!</p>
                             </div>
                         </div>
                     </section>

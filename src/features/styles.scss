@@ -1,12 +1,19 @@
+$grid-m: 48em; // 768px
+$grid-s: 36em; // 576px
+
 .grid-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 1250px 200px;
+  grid-template-rows: 400px 1250px 200px;
   grid-template-areas:
     "header"
     "main"
     "footer";
   height: 100vh;
+
+  @media only screen and (max-width: $grid-m) {
+    grid-template-rows: 300px 1250px 200px;
+  }
 }
 
 .header {
@@ -21,6 +28,10 @@
   h1 {
     font-size: 3rem;
     margin: 0 0 1rem;
+
+    @media only screen and (max-width: $grid-m) {
+      font-size: 2rem;
+    }
   }
 
   h2 {
@@ -39,6 +50,10 @@
     letter-spacing: 0.02rem;
     border: none;
     border-radius: 5px;
+
+    @media only screen and (max-width: $grid-m) {
+      font-size: 1rem;
+    }
 
     &:hover {
       background-color: #008ee8;
@@ -77,26 +92,42 @@
         margin: 0;
         padding: 0;
       }
+
+      @media only screen and (max-width: $grid-m) { 
+        width: 150px;
+      }
     }
 
     .text {
-      height: 250px;
+      max-height: 250px;
       margin: 1rem 0;
+
+      @media only screen and (max-width: $grid-m) {
+        margin: 1.5rem 0;
+      }
 
       h3 {
         font-size: 1.3rem;
         font-weight: 400;
         text-align: initial;
         margin: 1rem 0 0.5rem;
+
+        @media only screen and (max-width: $grid-m) {
+          margin: 0.5rem 0 0.5rem;
+        }
       }
 
       p {
         text-align: justify;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 1.6;
         font-weight: 300;
         margin: 0;
         padding: 0;
+
+        @media only screen and (max-width: $grid-m) {
+          line-height: 1.4;
+        }
       }
     }
   }
@@ -125,16 +156,42 @@
       .icon-i {
         font-size: 4rem;
         padding: 1rem 0 2rem 0;
+
+        @media only screen and (max-width: $grid-m) {
+          font-size: 2.5rem;
+          padding: 1rem 0;
+          width: 100%;
+        }
       }
 
       p {
         font-size: 1rem;
         margin: 0 0 1rem 0;
+
+        @media only screen and (max-width: $grid-m) {
+          font-size: 0.9rem;
+          margin: 0;
+          text-align: initial;
+        }
       }
 
       &:hover {
         background: rgba(255, 255, 255, 0.1);
       }
+
+      @media only screen and (max-width: $grid-m) {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        align-items: center;
+        column-gap: 20px;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: $grid-m) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
@@ -159,6 +216,11 @@
       font-size: 2rem;
       font-weight: 300;
       margin: 0 0 1rem;
+
+      @media only screen and (max-width: $grid-m) {
+        font-size: 1.75rem;
+        margin: 0 0 0.5rem;
+      }
     }
 
     p {
@@ -187,6 +249,10 @@
       font-size: 2rem;
       font-weight: 300;
       margin: 0 0 1rem;
+
+      @media only screen and (max-width: $grid-m) {
+        font-size: 1.7rem;
+      }
     }
 
     .list {
@@ -199,6 +265,10 @@
         font-size: 1.2rem;
         font-weight: 300;
         text-align: initial;
+
+        @media only screen and (max-width: $grid-m) {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -275,6 +345,10 @@
         &:hover {
           color: #fff;
         }
+      }
+
+      @media only screen and (max-width: $grid-m) {
+        grid-template-columns: repeat(3, 20%);
       }
     }
   }
