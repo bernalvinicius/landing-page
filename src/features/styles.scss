@@ -93,8 +93,12 @@ $grid-s: 36em; // 576px
         padding: 0;
       }
 
-      @media only screen and (max-width: $grid-m) { 
+      @media only screen and (max-width: $grid-m) {
         width: 150px;
+      }
+
+      @media only screen and (max-width: $grid-s) {
+        width: 90px;
       }
     }
 
@@ -115,6 +119,10 @@ $grid-s: 36em; // 576px
         @media only screen and (max-width: $grid-m) {
           margin: 0.5rem 0 0.5rem;
         }
+
+        @media only screen and (max-width: $grid-s) {
+          font-size: 1rem;
+        }
       }
 
       p {
@@ -128,6 +136,14 @@ $grid-s: 36em; // 576px
         @media only screen and (max-width: $grid-m) {
           line-height: 1.4;
         }
+
+        @media only screen and (max-width: $grid-s) {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media only screen and (max-width: $grid-s) {
+        margin: 0;
       }
     }
   }
@@ -221,11 +237,21 @@ $grid-s: 36em; // 576px
         font-size: 1.75rem;
         margin: 0 0 0.5rem;
       }
+
+      @media only screen and (max-width: $grid-s) {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 0;
+      }
     }
 
     p {
       font-size: 1.2rem;
       font-weight: 300;
+
+      @media only screen and (max-width: $grid-s) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -253,6 +279,12 @@ $grid-s: 36em; // 576px
       @media only screen and (max-width: $grid-m) {
         font-size: 1.7rem;
       }
+
+      @media only screen and (max-width: $grid-s) {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 0;
+      }
     }
 
     .list {
@@ -260,6 +292,12 @@ $grid-s: 36em; // 576px
       grid-template-columns: 30% 30%;
       grid-gap: 10px;
       justify-content: center;
+
+      ul {
+        @media only screen and (max-width: $grid-s) {
+          padding: 0;
+        }
+      }
 
       li {
         font-size: 1.2rem;
@@ -269,6 +307,11 @@ $grid-s: 36em; // 576px
         @media only screen and (max-width: $grid-m) {
           font-size: 0.9rem;
         }
+      }
+
+      @media only screen and (max-width: $grid-s) {
+        grid-template-columns: 35% 35%;
+        grid-gap: 20px;
       }
     }
   }
@@ -294,6 +337,11 @@ $grid-s: 36em; // 576px
       font-size: 2rem;
       font-weight: 300;
       margin: 0 0 1rem;
+
+      @media only screen and (max-width: $grid-s) {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
     }
 
     button {
@@ -306,6 +354,10 @@ $grid-s: 36em; // 576px
       letter-spacing: 0.02rem;
       border: none;
       border-radius: 5px;
+
+      @media only screen and (max-width: $grid-m) {
+        font-size: 1rem;
+      }
 
       &:hover {
         background-color: #008ee8;
@@ -349,6 +401,10 @@ $grid-s: 36em; // 576px
 
       @media only screen and (max-width: $grid-m) {
         grid-template-columns: repeat(3, 20%);
+      }
+
+      @media only screen and (max-width: $grid-s) {
+        grid-template-columns: repeat(3, 30%);
       }
     }
   }
