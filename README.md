@@ -1,5 +1,5 @@
 # Landing Page
-![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/landing-page/master/src/assets/images/screenshot-landing-page.png?token=AHIQ5Y5JOY2FCCLDGLE24DK63ZY5O)
+![Preview-Screens](https://i.imgur.com/hZ0LOeW.png)
 ###### If you want to take a look at the project, it is [here](https://my-landingpage.netlify.app/).
 ## Why?
 This project is part of my personal portfolio, I did it only with the intention of improving my skills in CSS Grid and CSS Flex, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
