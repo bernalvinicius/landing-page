@@ -1,0 +1,51 @@
+$grid-m: 48em; // 768px
+$grid-s: 36em; // 576px
+
+.section-button {
+  background-color: #fff;
+  color: #1c262b;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0 0 1rem;
+
+      @media only screen and (max-width: $grid-s) {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+
+    button {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #007ece;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.3rem;
+      letter-spacing: 0.02rem;
+      border: none;
+      border-radius: 5px;
+
+      @media only screen and (max-width: $grid-m) {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        background-color: #008ee8;
+      }
+    }
+  }
+}

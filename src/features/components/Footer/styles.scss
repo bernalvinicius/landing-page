@@ -1,0 +1,46 @@
+$grid-m: 48em; // 768px
+$grid-s: 36em; // 576px
+
+.footer {
+  grid-area: footer;
+  background-color: #2d2b2a;
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 12%);
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.7);
+        cursor: pointer;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      @media only screen and (max-width: $grid-m) {
+        grid-template-columns: repeat(3, 20%);
+      }
+
+      @media only screen and (max-width: $grid-s) {
+        grid-template-columns: repeat(3, 30%);
+      }
+    }
+  }
+}
